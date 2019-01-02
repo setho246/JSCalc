@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>A basic JS calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'> -->
+</head>
+
+<body>
+    <h1>Basic web calculator</h1>
+
+    <textarea class='screen' id="screen" readonly rows='1'></textarea>
+    <table class="buttonArea">
+        <tr>
+            <td><input class="actionButton" type="button" value="C" onClick='clean()'></td>
+            <td><input class="actionButton" type="button" value="<" onClick='back()'></td>
+            <td><input class="actionButton" type="button" value="/" onClick='actionInput("/")'></td>
+            <td><input class="actionButton" type="button" value="X" onClick='actionInput("*")'></td>
+        </tr>
+        <tr>
+            <td><input  class="numButton" type="button" value="9" onClick='input(9)'></td>
+            <td><input  class="numButton" type="button" value="8" onClick='input(8)'></td>
+            <td><input  class="numButton" type="button" value="7" onClick='input(7)'></td>
+            <td><input  class="actionButton" type="button" value="+" onClick='actionInput("+")'></td>
+        </tr>
+        <tr>
+            <td><input  class="numButton" type="button" value="6" onClick='input(6)'></td>
+            <td><input  class="numButton" type="button" value="5" onClick='input(5)'></td>
+            <td><input  class="numButton" type="button" value="4" onClick='input(4)'></td>
+            <td><input  class="actionButton" type="button" value="-" onClick='actionInput("-")'></td>
+        </tr>
+        <tr>
+            <td><input  class="numButton" type="button" value="3" onClick='input(3)'></td>
+            <td><input  class="numButton" type="button" value="2" onClick='input(2)'></td>
+            <td><input  class="numButton" type="button" value="1" onClick='input(1)'></td>
+            <td rowspan="2"><input  class="actionButton equals" type="button" value="=" onClick='calc()'></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input  class="numButton zero" type="button" value="0" onClick='input(0)'></td>
+            <td><input  class="numButton" type="button" value="." onClick='input(".")'></td>
+        </tr>
+    </table>
+</body>
+
+</html>
